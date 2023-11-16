@@ -7,10 +7,15 @@ import whatsapp_icon from '../Assets/whatsapp_icon.png'
 const Footer = () => {
     return (
         <div className='footer'>
+            <div></div>
             <div className="footer-logo">
-                <img src={footer_logo} alt='' />
-                <p>SHOPPER</p>
-                <ul className="footer-links">
+               
+               <img src={footer_logo} alt='' />
+                <p>SHOPPER</p>        
+                               
+            </div>
+            <div>
+            <ul className="footer-links">
                     <li>Company</li>
                     <li>Products</li>
                     <li>Offices</li>
@@ -18,7 +23,7 @@ const Footer = () => {
                     <li>Contact</li>
                 </ul>
 
-               <div className="footer-social-icon">
+               {/* <div className="footer-social-icon">
                 <div className="footer-icon-container">
                     <img src={instargram_icon} alt='' />
                 </div>
@@ -28,9 +33,7 @@ const Footer = () => {
                 <div className="footer-icon-container">
                     <img src={whatsapp_icon} alt='' />
                 </div>
-               </div>
-
-               
+               </div> */}
             </div>
             <div className="footer-copyright">
                 <hr/>
