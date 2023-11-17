@@ -21,12 +21,19 @@ const ShopContextProvider = (props)=>{
 
     const addToCart =(itemId)=>{
         setCartItems((prev)=>({...prev,[itemId]:prev[itemId]+1}))
-        console.log(cartItems);
+        
     }
 
     const removeFromCart =(itemId)=>{
-        setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
+        
+        setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))       
+        
+        
     }
+
+    // const removeFromCart =(itemId)=>{
+    //     setCartItems((prev)=>({...prev,[itemId]:prev[itemId]-1}))
+    // }
     const getTotalCartAmount =()=>{
         let totalAmount=0;
         for(const item in cartItems){
